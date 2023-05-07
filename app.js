@@ -13,7 +13,7 @@ const app = express();
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://narturk:Test1234@cluster0.nwu85fw.mongodb.net/blogwithDB')
+  await mongoose.connect('mongodb+srv://<user>:<password>@cluster0.nwu85fw.mongodb.net/blogwithDB')
 }
 
 const composePostSchema = new mongoose.Schema({
